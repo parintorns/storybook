@@ -1,0 +1,39 @@
+{
+  "name": "storybook",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "storybook": "storybook start -p 7007"
+  },
+  "dependencies": {
+    "react": "16.0.0",
+    "react-native": "0.50.4"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.16",
+    "@storybook/addon-links": "^3.2.16",
+    "@storybook/react-native": "^3.2.16",
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "jest": "21.2.1",
+    "prop-types": "^15.6.0",
+    "react-dom": "16.0.0",
+    "react-test-renderer": "16.0.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "collectCoverageFrom": [
+      "**/src/*.js",
+      "**/src/components/*.js",
+      "**/src/pages/*.js"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!native-base)/"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/test-setup.js"
+  }
+}
