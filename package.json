@@ -8,6 +8,7 @@
     "storybook": "storybook start -p 7007"
   },
   "dependencies": {
+    "native-base": "^2.3.3",
     "react": "16.0.0",
     "react-native": "0.50.4"
   },

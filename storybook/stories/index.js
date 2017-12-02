@@ -8,10 +8,10 @@ import { linkTo } from '@storybook/addon-links'
 import CenterView from './CenterView'
 import App from '../../src/App'
 
-storiesOf('Page', module)
-  .add('sample', () =>
+storiesOf('Page: ', module)
+  .add('Sample', () =>
     <App />
   )
 
-storiesOf('Component', module)
+storiesOf('Component: ', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
